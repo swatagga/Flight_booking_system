@@ -6,7 +6,7 @@ from selenium import webdriver
 from axe_selenium_python import Axe
 
 # 🔍 Groq API Configuration
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 # 🛠️ Step 1: Clone GitHub Repository
 GITHUB_REPO_URL = "https://github.com/harismuneer/Flight-Booking-System-JavaServlets_App.git"  # Replace with the actual repo URL
@@ -58,7 +58,7 @@ for file in html_files:
         # 🤖 AI-Powered Fix Suggestion (Groq)
         client = groq.Client(api_key=GROQ_API_KEY)
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",  
+            model="llama3-8b-8192",  
             messages=[
                 {"role": "system", "content": prompt},
                 {"role": "user", "content": f"Fix accessibility issue for code element: {html_element}"}
