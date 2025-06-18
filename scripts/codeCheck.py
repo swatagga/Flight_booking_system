@@ -78,7 +78,7 @@ driver.quit()
 
 # 📝 Step 4: Save AI-Suggested Fixes to JSON
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-output_filename = f"github_accessibility_fixes_{timestamp}.json"
+output_filename = f"accessibility_report.json"
 with open(output_filename, "w") as f:
     json.dump(accessibility_issues, f, indent=4)
 
