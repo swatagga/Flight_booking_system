@@ -39,16 +39,16 @@ jobs:
     - name: Run Pa11y Accessibility Scan
       run: pa11y --json . > pa11y_report.json || true
 
-    - name: Upload Accessibility Reports
-      uses: actions/upload-artifact@v4
-      with:
-        name: accessibility-reports
-        path: accessibility_report.json
-
     - name: Grant execute permissions
       run: chmod +x scripts/codeCheck.py
 
     - name: AI-Powered Accessibility Fixes 
       run:  python scripts/codeCheck.py  # This script applies AI-generated accessibility fixes.
+
+    - name: Upload Accessibility Reports
+      uses: actions/upload-artifact@v4
+      with:
+        name: generated-output
+        path: accessibility_report.json
 
     
