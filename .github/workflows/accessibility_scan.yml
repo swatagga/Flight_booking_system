@@ -46,7 +46,9 @@ jobs:
         path: accessibility_report.json
 
     - name: Grant execute permissions
-      run: chmod +x scripts/code_accessibility_check.py
+      run: chmod +x scripts/codeCheck.py
 
-    - name: AI-Powered Accessibility Fixes (Groq LLM)
-      run:  python scripts/code_accessibility_check.py  # This script applies AI-generated accessibility fixes.
+    - name: AI-Powered Accessibility Fixes 
+      run:  python scripts/codeCheck.py  # This script applies AI-generated accessibility fixes.
+
+    
