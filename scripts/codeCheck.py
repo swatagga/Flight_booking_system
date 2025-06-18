@@ -10,7 +10,7 @@ from axe_selenium_python import Axe
 GROQ_API_KEY = "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"
 
 # 🛠️ Step 1: Clone GitHub Repository
-GITHUB_REPO_URL = "https://github.com/harismuneer/Flight-Booking-System-JavaServlets_App.git"  # Replace with the actual repo URL
+GITHUB_REPO_URL = "https://github.com/swatagga/Flight_booking_system.git"  # Replace with the actual repo URL
 LOCAL_REPO_PATH = "./repo_clone"
 
 if not os.path.exists(LOCAL_REPO_PATH):
