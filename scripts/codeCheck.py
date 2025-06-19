@@ -23,7 +23,7 @@ excluded_folders = {"build/web"}
 for root, dirs, files in os.walk(LOCAL_REPO_PATH):
     dirs[:] = [d for d in dirs if d not in excluded_folders]  # Exclude specified folders
     for file in files:
-        if file.endswith(".html") or file.endswith(".css") or file.endswith(".js") or file.endswith(".jsp"):
+        if file.endswith(".html") or file.endswith(".css") or file.endswith(".js"):
             html_files.append(os.path.join(root, file))
 
 accessibility_issues = {}
@@ -78,7 +78,7 @@ driver.quit()
 
 # 📝 Step 4: Save AI-Suggested Fixes to JSON
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-output_filename = f"accessibility_report.json"
+output_filename =  f"github_accessibility_fixes.json"
 with open(output_filename, "w") as f:
     json.dump(accessibility_issues, f, indent=4)
 

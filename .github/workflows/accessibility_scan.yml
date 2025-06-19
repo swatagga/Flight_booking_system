@@ -49,6 +49,6 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: generated-output
-        path: accessibility_report.json
+        path: github_accessibility_fixes.json
 
     
