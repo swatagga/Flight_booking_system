@@ -46,7 +46,7 @@ jobs:
       run:  python scripts/code_accessibility_check.py  # This script applies AI-generated accessibility fixes.
 
     - name: Move output to target folder
-        run: |
+      run: |
           mkdir -p output_folder/
           mv accessibility_fixes.json output_folder/
 
