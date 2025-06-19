@@ -45,11 +45,6 @@ jobs:
     - name: AI-Powered Accessibility Fixes 
       run:  python scripts/code_accessibility_check.py  # This script applies AI-generated accessibility fixes.
 
-    - name: Move output to target folder
-      run: |
-          mkdir -p output_folder/
-          mv accessibility_fixes.json output_folder/
-
     - name: Upload Accessibility Reports
       uses: actions/upload-artifact@v4
       with:
