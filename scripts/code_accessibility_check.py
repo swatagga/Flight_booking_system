@@ -76,7 +76,7 @@ for file in html_files:
 driver.quit()
 
 # 📝 Step 4: Save AI-Suggested Fixes to JSON
-with open("github_accessibility_fixes.json", "w") as f:
+with open("accessibility_fixes.json", "w") as f:
     json.dump(accessibility_issues, f, indent=4)
 
 # ✅ Step 5: Print AI-Generated Fix Suggestions
