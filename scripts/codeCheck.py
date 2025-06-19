@@ -23,7 +23,7 @@ excluded_folders = {"build/web"}
 for root, dirs, files in os.walk(LOCAL_REPO_PATH):
     dirs[:] = [d for d in dirs if d not in excluded_folders]  # Exclude specified folders
     for file in files:
-        if file.endswith(".html") or file.endswith(".css") or file.endswith(".js"):
+        if file.endswith(".html") or file.endswith(".css") or file.endswith(".js") or file.endswith(".jsp"):
             html_files.append(os.path.join(root, file))
 
 accessibility_issues = {}
