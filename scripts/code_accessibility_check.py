@@ -80,7 +80,7 @@ with open("accessibility_fixes.json", "w") as f:
     json.dump(accessibility_issues, f, indent=4)
 
 # ✅ Step 5: Print AI-Generated Fix Suggestions
-print("\n🔹 AI-Powered Accessibility Fixes for GitHub Repository:\n")
+print("\n🔹 AI-Powered Accessibility Fixes for GitHub Repo:\n")
 for file, fix in accessibility_issues.items():
     print(f"📄 File: {file}")
     print(f"🚨 Issue: {fix['Issue']}")
