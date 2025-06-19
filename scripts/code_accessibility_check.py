@@ -6,7 +6,7 @@ from selenium import webdriver
 from axe_selenium_python import Axe
 
 # 🔍 Groq API Configuration
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 # 🛠️ Step 1: Clone GitHub Repository
 GITHUB_REPO_URL = "https://github.com/harismuneer/Flight-Booking-System-JavaServlets_App.git"  # Replace with the actual repo URL
